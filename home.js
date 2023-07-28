@@ -4,7 +4,7 @@ var userName = localStorage.getItem("userName");
 
 welcomeUser.innerHTML = "Welcome " + userName;
 if (!userName) {
-  location.assign("./index.html");
+  window.location.href="index.html";
 }
 
 logOutBtn.addEventListener("click", function () {
